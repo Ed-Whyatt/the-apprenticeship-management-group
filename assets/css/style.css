@@ -1,0 +1,13 @@
+.header-nav {
+    list-style: none;
+    
+}
+
+.inline {
+    display: inline-block;
+    
+}
+
+.inline a {
+    text-decoration: none;
+}
