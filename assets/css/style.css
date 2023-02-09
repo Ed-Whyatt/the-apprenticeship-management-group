@@ -6,6 +6,10 @@
     color: #251f22;
 }
 
+.amg-text-dark-grey {
+    color: #6A656A;
+}
+
 .amg-background-orange {
     background-color: #f29426;
 }
@@ -44,15 +48,19 @@
     height: auto;
 }
 
+.small-screen-header-logo {
+    width: 100%;
+    height: 60px;
+}
+
 .navbar {
     padding: 0;
     margin: 0;
-    height: 70px;
+    min-height: 70px;
 }
 
 .large-screen-nav {
-    /* background-color: rgba(37, 31, 34, .9); */
-    background-color: rgba(149, 148, 148, .8);
+    background-color: rgba(149, 148, 148, .2);
 }
 
 .large-screen-nav-button {
@@ -90,4 +98,47 @@
     width: 100%;
     height: 3rem;
     background-color: #f29426;
+}
+
+/* .box-one {
+    width: 600px;
+} */
+.box-div {
+    width: 100px;
+    height: 100px;
+}
+
+/* Section one */
+
+.section-one-heading {
+    margin-left: 20%;
+    margin-top: 20%;
+}
+
+.section-one-text {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.section-one-background {
+    background-color: rgba(149, 148, 148, .2);
+    padding-right: 10%;
+}
+
+.amg-icon {
+    font-size: 26px;
+    color: #6A656A;
+    padding-left: 50%;
+}
+
+@media screen and (max-width: 992px) {
+
+    .large-screen-nav {
+        background-color: #fff;
+    }
+
+    .amg-icon {
+        padding-left: 0%;
+    }
+
 }
