@@ -1,3 +1,8 @@
+/* body {
+    padding: 0;
+    margin: 0;
+} */
+
 .amg-text-orange {
     color: #f29426;
 }
@@ -130,6 +135,35 @@
     color: #6A656A;
     padding-left: 50%;
 }
+
+.section-two-footer {
+    position: relative;
+    height:200px;
+}
+
+.section-two-footer-text {
+    position: absolute;
+    top: 180px;
+    margin-left: 18%;
+    width: 70%;
+}
+
+.section-two-footer-text-left {
+    font-size: 23px;
+    color: #f9f7ee;
+    padding-right: 20%;
+}
+
+.section-two-footer-text-right {
+    font-size: 18px;
+    color: #f9f7ee;
+}
+
+/* .section-two-bottom {
+    background-color: #6A656A;
+    height: 600px;
+    width: 100%;
+} */
 
 @media screen and (max-width: 992px) {
 
