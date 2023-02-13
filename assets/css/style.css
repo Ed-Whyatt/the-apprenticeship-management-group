@@ -1,14 +1,13 @@
-/* body {
-    padding: 0;
-    margin: 0;
-} */
-
 .amg-text-orange {
     color: #f29426;
 }
 
 .amg-text-brown {
     color: #251f22;
+}
+
+.amg-text-white {
+    color: #f9f7ee;
 }
 
 .amg-text-dark-grey {
@@ -20,7 +19,7 @@
 }
 
 .header-container {
-    height: 400px;
+    height: 100px;
 }
 
 .header-nav {
@@ -56,8 +55,8 @@
     width: 400px;
     height: 400px;
     position: relative;
-    margin-left: 40%;
-    margin-top: 10%;
+    margin-left: 1%;
+    margin-top: 1%;
 }
 
 
@@ -179,10 +178,10 @@
 .section-two-footer {
     position: relative;
     background-color: #6A656A;
-    height: 750px;
+    height: 220px;
 }
 
-.section-two-footer-text {
+.section-two-footer-text-container {
     position: absolute;
     top: 0;
     margin-left: 18%;
@@ -199,9 +198,66 @@
     color: #f9f7ee;
 }
 
+/* Section three */
+/* .section-three-background {
+        height: 100vh;
+        background: url('../images/amg-logo-transparent-1.png');
+        background-color: #f9f7ee;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+} */
+
+.section-three-background {
+    background: url('../images/amg-logo-transparent-1.png');
+    background-color: #959494;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    -webkit-background-size: center;
+    -moz-background-size: center;
+    -o-background-size: center;
+    background-size: center;
+    align-items: top;
+    justify-content: top;
+    position: relative;
+    display: flex;
+    height: 90vh;
+}
+
+.section-three-first-text-container {
+    background-color: transparent;
+}
+
+.quote-icon {
+    color: #6A656A;
+    font-size: 40px;
+}
+
+.quote-text {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.section-three-second-text-container {
+    background-color: #f9f7ee;
+}
 
 
 
+@media screen and (max-width: 768px) {
+    .section-two-footer {
+        height: 1200px;
+    }
+}
 
 @media screen and (max-width: 992px) {
 
@@ -212,5 +268,19 @@
     .amg-icon {
         padding-left: 0%;
     }
+
+    .section-two-footer {
+        height: 600px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .section-two-footer {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
 
 }
