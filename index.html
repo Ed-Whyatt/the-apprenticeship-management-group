@@ -17,82 +17,90 @@
 <body>
 
     <div class="container-fluid g-0">
-        <div class="row g-0 header-container amg-background-orange">
+        <div class="row">
+            <div class="col-12header-container amg-background-orange">
 
-            <div class="col-6">
-                <div id="pc" class="header-logo-container">
-                    <div class="pc-image">
-                        <div class="pc-inside-background">
-                            <a href="#">
-                                <img class="header-logo" src="assets/images/amg-logo-1.png"
-                                    alt="The Apprenticeship Management Group Logo">
-                            </a>
+                <div class="row g-0">
+
+                    <div class="col-6">
+                        <div id="pc" class="header-logo-container d-none d-lg-block">
+                            <div class="pc-image">
+                                <div class="pc-inside-background">
+                                    <a href="#">
+                                        <img class="header-logo" src="assets/images/amg-logo-1.png"
+                                            alt="The Apprenticeship Management Group Logo">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+        
                     </div>
+        
+                    <div class="col-4 d-none d-lg-block">
+                        <ul class="header-nav float-end">
+        
+                            <!-- Header about dropdowwn -->
+                            <li class="inline">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle amg-text-brown text-center me-2 header-nav-button" href="#"
+                                        role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        About
+                                    </a>
+        
+                                    <ul class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+        
+                            <!-- Header whats new drop down -->
+                            <li class="inline">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle amg-text-brown me-2 header-nav-button" href="#" role="button"
+                                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        What's new
+                                    </a>
+        
+                                    <ul class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+        
+                            <li class="inline">
+                                <a class="header-nav-button" href="#">
+                                    <span class="amg-text-brown me-2">Get in touch</span>
+                                </a>
+                            </li>
+        
+                            <li class="inline">
+                                <div class="facebook-logo">
+                                    <a href="https://www.facebook.com/ApprenticeMGUK"
+                                        aria-label="Link To The Apprenticeship Management Group Facebook Page Opens In New Tab"
+                                        target="_blank">
+                                        <span>
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </span>
+                                    </a>
+                                </div>
+        
+                            </li>
+                        </ul>
+                    </div>
+        
+        
                 </div>
 
             </div>
-
-            <div class="col-4 d-none d-lg-block">
-                <ul class="header-nav float-end">
-
-                    <!-- Header about dropdowwn -->
-                    <li class="inline">
-                        <div class="dropdown">
-                            <a class="dropdown-toggle amg-text-brown text-center me-2 header-nav-button" href="#"
-                                role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                About
-                            </a>
-
-                            <ul class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <!-- Header whats new drop down -->
-                    <li class="inline">
-                        <div class="dropdown">
-                            <a class="dropdown-toggle amg-text-brown me-2 header-nav-button" href="#" role="button"
-                                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                What's new
-                            </a>
-
-                            <ul class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="inline">
-                        <a class="header-nav-button" href="#">
-                            <span class="amg-text-brown me-2">Get in touch</span>
-                        </a>
-                    </li>
-
-                    <li class="inline">
-                        <div class="facebook-logo">
-                            <a href="https://www.facebook.com/ApprenticeMGUK"
-                                aria-label="Link To The Apprenticeship Management Group Facebook Page Opens In New Tab"
-                                target="_blank">
-                                <span>
-                                    <i class="fa-brands fa-facebook"></i>
-                                </span>
-                            </a>
-                        </div>
-
-                    </li>
-                </ul>
-            </div>
-
-
         </div>
+
+
         <div class="row g-0">
-            <div class="col-12 header-wave">
+            <div class="col-12 header-wave d-none d-lg-block">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path fill="rgba(149, 148, 148, 1)" fill-opacity="1"
                         d="M0,64L60,101.3C120,139,240,213,360,213.3C480,213,600,139,720,133.3C840,128,960,192,1080,197.3C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
