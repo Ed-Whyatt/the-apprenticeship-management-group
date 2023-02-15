@@ -22,18 +22,47 @@
     background-color: rgba(149, 148, 148, 0.5);
 }
 
-.header-wave {
-    /* background-image: linear-gradient(#f29426, rgba(149, 148, 148, 1)); */
-    background-image: linear-gradient( #f29426, #f2b926);
+.amg-background-white {
+    background-color: #f9f7ee;
 }
 
 .header-container {
     height: 100px;
+    background-image: linear-gradient( #f2b926, #f29426);
+    position: fixed;
+    z-index: 20; 
+}
+
+.header-wave-container {
+    background-color: #f29426;
+    width: 100%;
+    height: 45vh;
+    margin-top: 100px;
+}
+
+.header-wave-three {
+    position: absolute;
+    width: 100%;
+    bottom: 45vh;
+}
+
+.header-wave-one {
+    position: absolute;
+    width: 100%;
+    bottom: 45vh;
+}
+
+.header-wave-two {
+    position: absolute;
+    width: 100%;
+    bottom: 45vh;
 }
 
 .header-nav {
     list-style: none;
-    margin-top: 15px;   
+    margin-top: 15px; 
+    padding-right: 20%;
+ 
 }
 
 .header-nav-button:hover {
@@ -60,12 +89,20 @@
     color: #251f22;
 }
 
+
+.header-logo-two {
+    height: 80px;
+    margin-left: 20%;
+    margin-top: 10px;
+
+}
+
 .header-logo-container {
     width: 400px;
     height: 400px;
-    position: relative;
-    margin-left: 1%;
-    margin-top: 1%;
+    position: absolute;
+    padding-top: 100px;
+    z-index: 1;
 }
 
 
@@ -92,7 +129,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    
+
 }
 
 .header-logo {
@@ -122,6 +159,7 @@
     text-decoration: none !important;
     height: 70px;
     padding-top: 20px;
+    z-index: 10;
 }
 
 .large-screen-nav-button:hover,
@@ -153,19 +191,19 @@
     width: 31%;
     position: absolute;
     background-image: linear-gradient(to right, rgba(106, 101, 106, 0.5), rgba(106, 101, 106, 0.8), rgba(106, 101, 106, 1), rgba(106, 101, 106, 0.1));
-    z-index: 2;
+    z-index: 10;
 }
 
 .hero-image-curve-one {
     width: 400px;
     position: absolute;
-    z-index: 4;
+    z-index: 11;
 }
 
 .hero-image-curve-two {
     width: 400px;
     position: absolute;
-    z-index: 3;
+    z-index: 12;
 
 }
 
@@ -174,7 +212,7 @@
     height: 3rem;
     background-color: #f29426;
     position: relative;
-    z-index: 5;
+    z-index: 13;
 }
 
 /* test page */
