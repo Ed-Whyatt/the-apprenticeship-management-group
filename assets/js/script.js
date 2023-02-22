@@ -14,9 +14,9 @@ $(document).ready(function(){
     
     
     $(window).on('scroll',() => {
-        $('#sectionOneHeading').show('slide', {direction: 'left'}, 1000);
-        $('#sectionOneText').show('slide', {direction: 'right'}, 1000);
-        $('#headerLogoTwo').show('slide', {direction: 'left'}, 1000);
+        $('#sectionOneHeading').show('slide', {direction: 'left'}, 1500);
+        $('#sectionOneText').show('slide', {direction: 'right'}, 1500);
+        $("#headerLogoTwo").fadeIn("slow");
     });
     
 });
