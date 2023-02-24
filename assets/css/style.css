@@ -293,23 +293,6 @@ h1 {
     padding-left: 50%;
 }
 
-/* .tablets-image {
-    width: 100%;
-    height: 400px;
-    background: url('../images/two-tablets-transparent.png');
-    background-repeat: no-repeat;
-    background-position: top;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 100px;
-} */
-
 .section-two-text {
     width: 80%;
 }
@@ -331,6 +314,26 @@ h1 {
 .section-two-footer-text {
     font-size: 23px;
     color: #f9f7ee;
+    margin-top: -10%;
+}
+
+.chart-container {
+    position: relative;
+    z-index: 10;
+    margin-top: -30%;
+}
+
+.chart-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart {
+    padding: 2rem;
+    background: rgba(37, 31, 34, 0.5);
+    /* background: #f9f7ee; */
+    border-radius: 25px;
 }
 
 /* Section three */
@@ -413,10 +416,6 @@ h1 {
 
     .amg-icon {
         padding-left: 0%;
-    }
-
-    .section-two-footer {
-        height: 600px;
     }
 
 }
