@@ -12,6 +12,8 @@ $(document).ready(function(){
     $('#sectionOneHeading').hide('slide', {direction: 'left'});
     $('#sectionOneText').hide('slide', {direction: 'right'});
     $('#headerLogoTwo').hide('slide', {direction: 'left'});
+    $('#twoText').hide('slide', {direction: 'left'});
+    
     
     
     $(window).on('scroll',() => {
@@ -24,14 +26,26 @@ $(document).ready(function(){
             $("#headerLogoTwo").fadeIn("slow");
             curveone.animate({left: '80px'}, 1500);
             curvetwo.animate({left: '80px'}, 1200);
-            
             // console.log("True")
         } else {
             $('#headerLogoTwo').hide('slide', {direction: 'left'});
-            console.log("else")
+            // console.log("else")
         };
 
     });
+
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 1400) {
+            let barchart = $('#barchart');
+            $('#twoText').show('slide', {direction: 'left'}, 1000);
+            $("#barchart").animate({
+                height: '300px',
+                width: '300px'
+              }, "slow");
+            // barchart.animate({height: '300px'}, "slow");
+            
+        }
+      });
     
 
     // var scrollPosition = $("body, html").scrollTop()

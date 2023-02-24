@@ -320,10 +320,7 @@ h1 {
 .chart-container {
     position: relative;
     z-index: 10;
-    margin-top: -30%;
-}
-
-.chart-box {
+    margin-top: -20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -331,9 +328,9 @@ h1 {
 
 .chart {
     padding: 2rem;
-    background: rgba(37, 31, 34, 0.5);
+    background: rgba(37, 31, 34, 0.8);
     /* background: #f9f7ee; */
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 /* Section three */
@@ -373,6 +370,7 @@ h1 {
 
 .section-three-first-container {
     background-color: transparent;
+    height: 400px;
 }
 
 .quote-icon {
@@ -387,6 +385,7 @@ h1 {
 
 .section-three-second-container {
     background-color: #f9f7ee;
+    margin-bottom: 150px;
 }
 
 .section-three-image {
