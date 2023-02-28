@@ -26,12 +26,11 @@ $(document).ready(function(){
             $("#headerLogoTwo").fadeIn("slow");
             curveone.animate({left: '40px'}, 1500);
             curvetwo.animate({left: '40px'}, 1200);
-            // console.log("True")
+
         } else {
             $('#headerLogoTwo').hide('slide', {direction: 'left'});
-            // console.log("else")
         };
-
+        
     });
 
     $(window).scroll(function() {
@@ -42,17 +41,15 @@ $(document).ready(function(){
                 width: '300px'
               }, "slow");
             
-        }
+        } 
     });
 
-    
-    
     $(window).scroll(function() {
         if ($(document).scrollTop() > 2400) {
             $('#imageOne').show('slide', {direction: 'left'}, 1000);
-            $('#imageTwo').show('slide', {direction: 'left'}, 2000);
-            $('#imageThree').show('slide', {direction: 'left'}, 3000);
-            $('#imageFour').show('slide', {direction: 'left'}, 4000);
+            $('#imageTwo').show('slide', {direction: 'left'}, 1500);
+            $('#imageThree').show('slide', {direction: 'left'}, 2000);
+            $('#imageFour').show('slide', {direction: 'left'}, 2500);
         } else {
             $('#imageOne').hide('slide', {direction: 'left'});
             $('#imageTwo').hide('slide', {direction: 'left'});
