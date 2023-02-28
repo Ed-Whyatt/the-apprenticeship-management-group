@@ -269,6 +269,7 @@ h1 {
 
 .section-curve {
     position: relative;
+    height: 100px;
 }
 
 
@@ -376,7 +377,6 @@ h1 {
 
 .section-three-first-container {
     background-color: transparent;
-    /* height: 400px; */
 }
 
 .quote-icon {
@@ -391,6 +391,7 @@ h1 {
 
 .section-three-second-container {
     background-color: #f9f7ee;
+    height: 400px;
 
 }
 
@@ -398,21 +399,27 @@ h1 {
     width: 60%;
     height: auto;
     margin-left: 20%;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.section-three-title {
+    font-size: 15px;
+    color: #251f22;
 }
 
 .section-three-text {
     width: 80%;
     margin-left: 15%;
+    color: #251f22;
 }
 
 .footer {
     height: 100px;
-    background-color: #f29426;
+    background-image: linear-gradient( #f2b926, #f29426);
     padding-bottom: 0;
     margin-bottom: 0;
 }
-
-
 
 @media screen and (max-width: 768px) {
     .section-two-footer {

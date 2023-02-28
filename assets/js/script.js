@@ -24,8 +24,8 @@ $(document).ready(function(){
         let headerLogoTwo = $('#headerLogoTwo').height();
         if($(this).scrollTop()>=headerLogoTwo){
             $("#headerLogoTwo").fadeIn("slow");
-            curveone.animate({left: '80px'}, 1500);
-            curvetwo.animate({left: '80px'}, 1200);
+            curveone.animate({left: '40px'}, 1500);
+            curvetwo.animate({left: '40px'}, 1200);
             // console.log("True")
         } else {
             $('#headerLogoTwo').hide('slide', {direction: 'left'});
@@ -36,22 +36,27 @@ $(document).ready(function(){
 
     $(window).scroll(function() {
         if ($(document).scrollTop() > 1400) {
-            let barchart = $('#barchart');
             $('#twoText').show('slide', {direction: 'left'}, 1000);
             $("#barchart").animate({
                 height: '300px',
                 width: '300px'
               }, "slow");
-            // barchart.animate({height: '300px'}, "slow");
             
         }
-      });
+    });
+
+    $('#imageOne').hide('slide', {direction: 'left'});
+    $('#imageTwo').hide('slide', {direction: 'left'});
+    $('#imageThree').hide('slide', {direction: 'left'});
+    $('#imageFour').hide('slide', {direction: 'left'});
     
-
-    // var scrollPosition = $("body, html").scrollTop()
-    // if (scrollPosition == 0){
-    //     console.log("True")
-    // };
-
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 2400) {
+            $('#imageOne').show('slide', {direction: 'left'}, 1000);
+            $('#imageTwo').show('slide', {direction: 'left'}, 2000);
+            $('#imageThree').show('slide', {direction: 'left'}, 3000);
+            $('#imageFour').show('slide', {direction: 'left'}, 4000);
+        }
+    });
 
 });
