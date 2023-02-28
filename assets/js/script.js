@@ -45,10 +45,7 @@ $(document).ready(function(){
         }
     });
 
-    $('#imageOne').hide('slide', {direction: 'left'});
-    $('#imageTwo').hide('slide', {direction: 'left'});
-    $('#imageThree').hide('slide', {direction: 'left'});
-    $('#imageFour').hide('slide', {direction: 'left'});
+    
     
     $(window).scroll(function() {
         if ($(document).scrollTop() > 2400) {
@@ -56,6 +53,11 @@ $(document).ready(function(){
             $('#imageTwo').show('slide', {direction: 'left'}, 2000);
             $('#imageThree').show('slide', {direction: 'left'}, 3000);
             $('#imageFour').show('slide', {direction: 'left'}, 4000);
+        } else {
+            $('#imageOne').hide('slide', {direction: 'left'});
+            $('#imageTwo').hide('slide', {direction: 'left'});
+            $('#imageThree').hide('slide', {direction: 'left'});
+            $('#imageFour').hide('slide', {direction: 'left'});
         }
     });
 
