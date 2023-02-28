@@ -1,3 +1,9 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+ }
+
 .amg-text-orange {
     color: #f29426;
 }
@@ -370,7 +376,7 @@ h1 {
 
 .section-three-first-container {
     background-color: transparent;
-    height: 400px;
+    /* height: 400px; */
 }
 
 .quote-icon {
@@ -385,7 +391,7 @@ h1 {
 
 .section-three-second-container {
     background-color: #f9f7ee;
-    margin-bottom: 150px;
+
 }
 
 .section-three-image {
@@ -397,6 +403,13 @@ h1 {
 .section-three-text {
     width: 80%;
     margin-left: 15%;
+}
+
+.footer {
+    height: 100px;
+    background-color: #f29426;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 
