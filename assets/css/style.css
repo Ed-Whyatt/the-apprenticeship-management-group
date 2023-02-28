@@ -299,7 +299,7 @@ h1 {
 
 .section-two-footer {
     position: relative;
-    background-color: #6A656A;
+    background-color: #959494;
     /* background-image: linear-gradient(to right, rgba(106, 101, 106, 1), rgba(106, 101, 106, 0.8), rgba(106, 101, 106, 1), rgba(106, 101, 106, 1)); */
     height: 220px;
 }
@@ -353,7 +353,7 @@ h1 {
 
 .section-three-background {
     background: url('../images/amg-logo-transparent-1.png');
-    background-color: #959494;
+    background-color: #6A656A;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
