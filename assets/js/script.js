@@ -13,6 +13,7 @@ $(document).ready(function(){
     $('#sectionOneText').hide('slide', {direction: 'right'});
     $('#headerLogoTwo').hide('slide', {direction: 'left'});
     $('#twoText').hide('slide', {direction: 'left'});
+    console.log("Hey Dude Hope yor having an amazing day")
     
     
     
