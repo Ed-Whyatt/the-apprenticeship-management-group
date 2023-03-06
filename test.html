@@ -8,50 +8,720 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>The Apprenticeship Management Group</title>
+
 </head>
 
 <body>
 
-    <!-- <div class="box-one">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="400 40 500 1400">
-            <path fill="#0099ff" fill-opacity="1"
-                d="M450,600,Q750,300,450,0Q600,300,450,600">
-            </path>
-        </svg>
-    </div> -->
+    <div class="container-fluid g-0">
+        <div class="row g-0">
+
+            <div class="col-12 header-container d-none d-lg-block">
+                <div class="row">
+
+                    <div class="col-6">
+                        <div id="headerLogoTwo" class="header-logo-two-container">
+                            <a href="index.html">
+                                <img class="header-logo-two" src="assets/images/amg-black-transparent-cropped.png"
+                                    alt="The Apprenticeship Management Group Logo">
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <ul class="header-nav float-end">
+                            <!-- Header about dropdowwn -->
+                            <li class="inline">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle amg-text-brown text-center me-2 header-nav-button"
+                                        href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        About
+                                    </a>
+
+                                    <ul class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Header whats new drop down -->
+                            <li class="inline">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle amg-text-brown me-2 header-nav-button" href="#"
+                                        role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        What's new
+                                    </a>
+
+                                    <ul class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="inline">
+                                <a class="header-nav-button" href="#">
+                                    <span class="amg-text-brown me-2">Get in touch</span>
+                                </a>
+                            </li>
+
+                            <li class="inline">
+                                <div class="facebook-logo">
+                                    <a href="https://www.facebook.com/ApprenticeMGUK"
+                                        aria-label="Link To The Apprenticeship Management Group Facebook Page Opens In New Tab"
+                                        target="_blank">
+                                        <span>
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-6 g-0">
+                <div id="pc" class="header-logo-container d-none d-lg-block">
+                    <div class="pc-image">
+                        <div class="pc-inside-background">
+                            <a href="index.html">
+                                <img class="header-logo" src="assets/images/amg-logo-1.png"
+                                    alt="The Apprenticeship Management Group Logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="col-6 d-none d-lg-block">
+                <div class="header-text-container">
+                    <h2 class="header-text">Some Text Here</h2>
+                </div>
+                
+            </div> -->
+            
+
+        </div>
 
 
-    <!-- first curve -->
-    <div class="box-one">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 0 400 1440">
-            <path fill="#0099ff" fill-opacity="1"
-                d="M0,400,Q400,400,250,0Q300,350,00,400">
-            </path>
-        </svg>
+        <div class="row g-0">
+            <div class="col-12 header-wave-container d-none d-lg-block">
+
+                <div class="header-wave-one d-xxl-none">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#ff960c" fill-opacity="1"
+                            d="M0,128L48,133.3C96,139,192,149,288,154.7C384,160,480,160,576,138.7C672,117,768,75,864,58.7C960,43,1056,53,1152,53.3C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                        </path>
+                    </svg> -->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#ff960c" fill-opacity="1"
+                            d="M0,96L48,106.7C96,117,192,139,288,176C384,213,480,267,576,266.7C672,267,768,213,864,181.3C960,149,1056,139,1152,138.7C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                        </path>
+                    </svg>
+
+                </div>
+
+                <div class="header-wave-two">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#ff8c00" fill-opacity="1"
+                            d="M0,64L60,101.3C120,139,240,213,360,213.3C480,213,600,139,720,133.3C840,128,960,192,1080,197.3C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                        </path>
+                    </svg> -->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#ff8c00" fill-opacity="1"
+                            d="M0,224L48,229.3C96,235,192,245,288,229.3C384,213,480,171,576,176C672,181,768,235,864,245.3C960,256,1056,224,1152,218.7C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                        </path>
+                    </svg>
+                </div>
+
+                <div class="header-wave-three">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#f0880e" fill-opacity="1"
+                            d="M0,224L120,234.7C240,245,480,267,720,266.7C960,267,1200,245,1320,234.7L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+                        </path>
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light large-screen-nav d-flex">
+            <div class="container g-0">
+                <a class="navbar-brand d-lg-none" href="#">
+                    <img class="small-screen-header-logo" src="assets/images/amg-logo-1.png"
+                        alt="The Apprenticeship Management Group Logo">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle large-screen-nav-button" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Apprenticeships
+                            </a>
+                            <ul class="dropdown-menu rounded-0 amg-background-orange mt-0"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle large-screen-nav-button" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Graduates & Placements
+                            </a>
+                            <ul class="dropdown-menu rounded-0 amg-background-orange mt-0"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle large-screen-nav-button" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Training
+                            </a>
+                            <ul class="dropdown-menu rounded-0 amg-background-orange mt-0"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link large-screen-nav-button" href="#">Consultancy</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle large-screen-nav-button" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                End-Point Assessment
+                            </a>
+                            <ul class="dropdown-menu rounded-0 amg-background-orange mt-0"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle large-screen-nav-button" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                End-Point Assessment
+                            </a>
+                            <ul class="dropdown-menu rounded-0 amg-background-orange mt-0"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
-    
-    <!-- <div class="box-two">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1440">
-            <path fill="#0099ff" fill-opacity="1"
-                d="M450,300,Q650,150,450,0Q550,150,450,300">
-            </path>
-        </svg>
+
+    <!-- Image section -->
+    <div class="container-fluid g-0">
+        <div class="row g-0">
+            <div class="col-12 amg-background-white">
+
+                <!-- hero-image -->
+                <div class="hero-image-curve-background">
+
+                    <div id="curveone" class="hero-image-curve-one">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="400 50 500 1400">
+                            <path fill="#f29426" fill-opacity="1" d="M450,600,Q750,300,450,0Q600,300,450,600">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <div id="curvetwo" class="hero-image-curve-two">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 0 400 1440">
+                            <path fill="#251f22" fill-opacity="1" d="M0,400,Q400,400,250,0Q300,350,00,400">
+                            </path>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+                </div>
+
+            </div>
+            <div class="col-12">
+                <div class="hero-image-bottom">
+                    
+                </div>  
+            </div>
+
+        </div>
     </div>
 
-     current
-    <div class="box-three">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="300 0 1440 1440">
-            <path fill="#0099ff" fill-opacity="1"
-                d="M450,300,Q650,150,450,0Q550,150,450,300">
-            </path>
-        </svg>
-    </div> -->
+    <!-- Section one -->
+
+    <div class="container-fluid amg-background-light-gray section-one-container">
+        <div class="row">
+            <div class="col-12 g-0">
+                <div class="section-line">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f29426" fill-opacity="0.6" d="M0,32L1440,0L1440,0L0,0Z"></path></svg>
+                </div>            
+            </div>
+
+            <div class="col-12">
+                <div class="container g-0">
+                    <div class="row">
+                        
+                        <div class="col-md-4">
+        
+                            <div id="sectionOneHeading" class="section-one-heading">
+                                <h2>
+                                    <span class="amg-text-orange">OVERCOME HEADCOUNT RESTRICTIONS</span>
+                                    <span class="amg-text-brown">AND OUTSOURCE EMPLOYMENT RESPONSIBILITIES.</span>
+                                </h2>
+                            </div>
+        
+                        </div>
+                        <div class="col-md-8">
+                            <div id="sectionOneText" class="section-one-text">
+                                <p class="amg-text-brown">Our employment services are designed to support companies to take
+                                    on
+                                    apprentices with minimal
+                                    additional responsibility or where they would otherwise be unable to. As a Flexi-Job
+                                    Apprenticeship Agency we can also provide addtional flexibility to ensure apprenticeships
+                                    fit
+                                    organisational needs perfectly.
+                                </p>
+                                <br>
+                                <p class="amg-text-brown">
+                                    Our services are perfect for companies who:
+                                </p>
+                                <ul>
+                                    <li class="amg-text-brown">Have restrictions placed on headcount.</li>
+                                    <li class="amg-text-brown">Need additional support to employ an apprentice.</li>
+                                    <li class="amg-text-brown">Have a simple operating model and wish to outsource
+                                        employment
+                                        responsibilities.</li>
+                                    <li class="amg-text-brown">Require a flexible or tailored apprenticeship programme.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Section two -->
+
+    <div class="container-fluid g-0">
+        <div class="row g-0">
+
+            <div class="col-12 g-0">
+
+                <div class="section-line-one">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(149, 148, 148)" fill-opacity="0.3" d="M0,32L1440,0L1440,0L0,0Z"></path></svg> 
+                </div>
+
+                <div class="section-line-two">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(149, 148, 148)" fill-opacity="0.3" d="M0,64L1440,32L1440,0L0,0Z"></path></svg>
+                </div> 
+
+            </div>
+
+            <div class="col-12">
+
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-12 mt-5">
+                            <h3 class="text-center mt-4 amg-text-dark-grey">Our Outsourced Employment Services Include:
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3 g-0">
+                        <div class="col-12 col-md-6 mt-2">
+                            <div class="row g-0">
+                                <div class="col-2">
+                                    <i class="amg-icon fa-regular fa-circle-check"></i></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="amg-text-dark-grey section-two-text">
+                                        A completely free recruitment service
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-2">
+                            <div class="row g-0">
+                                <div class="col-2">
+                                    <i class="amg-icon fa-regular fa-circle-check"></i></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="amg-text-dark-grey section-two-text">
+                                        All responsibility for the wages, tax, National Insurance of the employee.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-2">
+                            <div class="row g-0">
+                                <div class="col-2">
+                                    <i class="amg-icon fa-regular fa-circle-check"></i></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="amg-text-dark-grey section-two-text">
+                                        All responsibility for administration of holidays, sickness & absence.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-2">
+                            <div class="row g-0">
+                                <div class="col-2">
+                                    <i class="amg-icon fa-regular fa-circle-check"></i></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="amg-text-dark-grey section-two-text">
+                                        Issuing of contracts of employment and full requirements against the agency
+                                        working regulations
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-2">
+                            <div class="row g-0">
+                                <div class="col-2">
+                                    <i class="amg-icon fa-regular fa-circle-check"></i></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="amg-text-dark-grey section-two-text">
+                                        The ability to take a flexible approach to apprenticeship programmes, such as
+                                        using Front Loaded Apprenticeships, Block Training & Accelerated Apprenticeships
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-2">
+                            <div class="row g-0">
+                                <div class="col-2">
+                                    <i class="amg-icon fa-regular fa-circle-check"></i></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="amg-text-dark-grey section-two-text">
+                                        A dedicated account manager to arrange training and ensure the employees
+                                        progression in line with the companies requirements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-2">
+                            <div class="row g-0">
+                                <div class="col-2">
+                                    <i class="amg-icon fa-regular fa-circle-check"></i></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="amg-text-dark-grey section-two-text">
+                                        Flexibility around duration of employment should host employer circumstances
+                                        change.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-2">
+                            <div class="row g-0">
+                                <div class="col-2">
+                                    <i class="amg-icon fa-regular fa-circle-check"></i></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="amg-text-dark-grey section-two-text">
+                                        When employing an apprentice, expert advice along the way and a bespoke
+                                        Apprenticeship Training Plan, detailing the qualifications, training provider
+                                        and assessments
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12">
+                <div class="section-two-footer-curve">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#959494" fill-opacity="1"
+                            d="M0,96L120,106.7C240,117,480,139,720,128C960,117,1200,75,1320,53.3L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="col-12 section-two-footer">
+
+                <div class="section-two-footer-text-container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div id="chartOne" class="chart-container">
+
+                                <div class="chart">
+                                    <canvas id="barchart" width="250" height="250"></canvas>
+                                </div>
+
+                            </div>
+                            
+
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p id="twoText" class="section-two-footer-text">We have been operating as an employment agency since
+                                2012. We are an approved Flexi-Job
+                                Apprenticeship Agency and are quality assured by the Education and Skills Funding Agency
+                                (ESFA).</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Section three -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 section-three-background">
+                <div class="row">
+                    <div class="col-12 g-0">
+                        <div class="section-curve">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                <path fill="#959494" fill-opacity="1"
+                                    d="M0,96L120,106.7C240,117,480,139,720,128C960,117,1200,75,1320,53.3L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="col-12 section-three-first-container">
+
+                        <div class="row">
+
+                            <div class="col-12">
+                                <h3 class="text-center amg-text-white section-three-title">
+                                    WHAT OUR CLIENTS SAY
+                                </h3>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="text-center quote-icon amg-text-white"><i
+                                                class="fa-solid fa-quote-left"></i></p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-center text-wrap quote-text amg-text-white">Always excellent
+                                            service provided by Cogent Skills. The knowledge within the team is second
+                                            to none.</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-center amg-text-white">RACHEL GREGORY</p>
+                                        <p class="text-center amg-text-white">at Venator</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="text-center quote-icon"><i class="fa-solid fa-quote-left"></i></p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-center text-wrap quote-text amg-text-white">Always excellent
+                                            service provided by Cogent Skills. The knowledge within the team is second
+                                            to none.</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-center amg-text-white">RACHEL GREGORY</p>
+                                        <p class="text-center amg-text-white">at Venator</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="text-center quote-icon"><i class="fa-solid fa-quote-left"></i></p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-center text-wrap quote-text amg-text-white">Always excellent
+                                            service provided by Cogent Skills. The knowledge within the team is second
+                                            to none.</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-center amg-text-white">RACHEL GREGORY</p>
+                                        <p class="text-center amg-text-white">at Venator</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <!-- Section four -->
+            <div class="col-12 section-three-second-container">
+
+                <div class="row">
+
+                    <div class="col-12">
+                        <h3 class="text-center mt-4">
+                            OUR APPRENTICESHIP SERVICES
+                        </h3>
+                    </div>
+
+                    <div id="imageOne" class="col-12 col-md-6 col-xl-3 mt-2">
+                        <div class="row ms-5">
+                            <div class="col-12">
+                                <img class="section-three-image mt-2" src="assets/images/job-office-team.jpg"
+                                    alt="">
+                            </div>
+                            <div class="col-12 mt-2">
+                                <h4 class="section-three-title text-center mt-2">APPRENTICE RECRUITMENT</h4>
+                            </div>
+                            <div class="col-12 section-three-text mt-2">
+                                <p>
+                                    A recruitment service to attract the best candidates for apprenticeship
+                                    roles
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="imageTwo" class="col-12 col-md-6 col-xl-3 mt-2">
+                        <div class="row ms-5">
+                            <div class="col-12">
+                                <img class="section-three-image mt-2" src="assets/images/job-office-team.jpg"
+                                    alt="">
+                            </div>
+                            <div class="col-12 mt-2">
+                                <h4 class="section-three-title text-center mt-2">APPRENTICE RECRUITMENT</h4>
+                            </div>
+                            <div class="col-12 section-three-text mt-2">
+                                <p>
+                                    A recruitment service to attract the best candidates for apprenticeship
+                                    roles
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="imageThree" class="col-12 col-md-6 col-xl-3 mt-2">
+                        <div class="row ms-5">
+                            <div class="col-12">
+                                <img class="section-three-image mt-2" src="assets/images/job-office-team.jpg"
+                                    alt="">
+                            </div>
+                            <div class="col-12 mt-2">
+                                <h4 class=" section-three-title text-center mt-2">APPRENTICE RECRUITMENT</h4>
+                            </div>
+                            <div class="col-12 section-three-text mt-2">
+                                <p>
+                                    A recruitment service to attract the best candidates for apprenticeship
+                                    roles
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="imageFour" class="col-12 col-md-6 col-xl-3 mt-2">
+                        <div class="row ms-5">
+                            <div class="col-12">
+                                <img class="section-three-image mt-2" src="assets/images/job-office-team.jpg"
+                                    alt="">
+                            </div>
+                            <div class="col-12 mt-2">
+                                <h4 class=" section-three-title text-center mt-2">APPRENTICE RECRUITMENT</h4>
+                            </div>
+                            <div class="col-12 section-three-text mt-2">
+                                <p>
+                                    A recruitment service to attract the best candidates for apprenticeship
+                                    roles
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <footer class="col-12 footer">
+
+            </footer>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.min.js" integrity="sha512-zjlf0U0eJmSo1Le4/zcZI51ks5SjuQXkU0yOdsOBubjSmio9iCUp8XPLkEAADZNBdR9crRy3cniZ65LF2w8sRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/chartOne.js"></script>
 </body>
 
 </html>
-

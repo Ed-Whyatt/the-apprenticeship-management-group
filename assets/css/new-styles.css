@@ -1,0 +1,177 @@
+/* General padding and margins */
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+/* General backgroud and text colours */
+.amg-background-white {
+    background-color: #f9f7ee;
+}
+
+/* Header and nav section */
+.header-container {
+    height: 15vh;
+    background-image: linear-gradient( #f2b926, #f29426);
+    position: fixed;
+    width: 100%;
+    z-index: 16;
+    /* height: 100px; */
+}
+
+.navbar-container {
+    position: fixed;
+    z-index: 17;
+    width: 100%;
+    background-color: transparent !important;
+}
+
+.header-wave-container {
+    width: 100%;
+    margin-top: 10vh;
+    position: fixed;
+    /* background-color: #f29426; */
+    z-index: 16;
+}
+
+/* .header-wave-one {
+    position: relative;
+    height: 3vh;
+    top: -37vh;
+    width: 2000px;
+    background-color: transparent;
+} */
+
+.header-wave-two {
+    position: relative;
+    height: 3vh;
+    top: -42vh;
+    width: 2000px;
+    background-color: transparent;
+}
+
+.header-wave-three {
+    position: relative;
+    height: 3vh;
+    top: -43vh;
+    width: 2000px;
+    background-color: transparent;
+}
+
+/* Image section */
+
+.image-section {
+    padding-top: 15vh;
+}
+
+/* Image from https://pixabay.com/photos/job-office-team-business-internet-5382501/ */
+.hero-image {
+    width: 80%;
+    height: 400px;
+    background: url('../images/job-office-team.jpg');
+    background-color: #8C776A;
+    background-repeat: no-repeat;
+    background-position: top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 20%;
+}
+
+.hero-image-curve-background {
+    height: 400px;
+    width: 31%;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(106, 101, 106, 0.5), rgba(106, 101, 106, 0.8), rgba(106, 101, 106, 1), rgba(106, 101, 106, 0.1));
+    z-index: 10;
+}
+
+.hero-image-curve-one {
+    width: 400px;
+    position: absolute;
+    z-index: 11;
+}
+
+.hero-image-curve-two {
+    width: 400px;
+    position: absolute;
+    z-index: 12;
+
+}
+
+.hero-image-bottom {
+    width: 100%;
+    height: 3rem;
+    background-color: #f29426;
+    position: relative;
+    z-index: 13;
+}
+
+/* section three */
+
+.section-three-background {
+    background: url('../images/amg-logo-transparent-1.png');
+    background-color: #6A656A;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    -webkit-background-size: center;
+    -moz-background-size: center;
+    -o-background-size: center;
+    background-size: center;
+    align-items: top;
+    justify-content: top;
+    position: relative;
+    display: flex;
+    height: 90vh;
+}
+
+.section-three-first-container {
+    background-color: transparent;
+}
+
+.quote-icon {
+    color: #f2b926;
+    font-size: 40px;
+}
+
+.quote-text {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.section-three-second-container {
+    background-color: #f9f7ee;
+    padding-bottom: 100px;
+}
+
+.section-three-image {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.section-three-title {
+    font-size: 15px;
+    color: #251f22;
+}
+
+.section-three-text {
+    width: 80%;
+    margin-left: 15%;
+    color: #251f22;
+}
+
+.footer {
+    height: 100px;
+    background-image: linear-gradient( #f2b926, #f29426);
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
