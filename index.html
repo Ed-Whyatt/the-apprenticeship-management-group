@@ -10,23 +10,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-    <link rel="stylesheet" href="assets/css/new-styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>The Apprenticeship Management Group</title>
 
 </head>
 
 <body>
-    <header class="container-fluid g-0">
+    <header class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 g-0">
                 <div class="header-container">
-
+                    <div class="row">
+                        <div class="col-4">
+                            <a id="navLogoOne" class="navbar-brand" href="index.html">
+                                <img class="header-logo-one" src="assets/images/amg-black-transparent-cropped.png"
+                                        alt="The Apprenticeship Management Group Logo">
+                            </a>
+                            <a id="navLogoTwo" class="navbar-brand" href="index.html">
+                                <img class="header-logo-two" src="assets/images/amg-black-transparent-cropped.png"
+                                        alt="The Apprenticeship Management Group Logo">
+                            </a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg bg-light navbar-container">
                     <div class="container-fluid">
-                        <a class="navbar-brand " href="#">Navbar</a>
+                        <!-- <a id="navLogoOne" class="navbar-brand" href="index.html">
+                            <img class="header-logo-one" src="assets/images/amg-black-transparent-cropped.png"
+                                    alt="The Apprenticeship Management Group Logo">
+                        </a>
+                        <a id="navLogoTwo" class="navbar-brand" href="index.html">
+                            <img class="header-logo-two" src="assets/images/amg-black-transparent-cropped.png"
+                                    alt="The Apprenticeship Management Group Logo">
+                        </a> -->
                         <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -88,7 +107,7 @@
                     </svg>
                 </div> -->
 
-                <div class="header-wave-two">
+                <!-- <div class="header-wave-two">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                         <path fill="#ff960c" fill-opacity="1"
                             d="M0,224L120,234.7C240,245,480,267,720,266.7C960,267,1200,245,1320,234.7L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
@@ -103,7 +122,7 @@
                         </path>
                     </svg>
 
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -244,7 +263,10 @@
                     <div id="imageOne" class="col-12 col-md-6 col-xl-3 mt-2">
                         <div class="row ms-5">
                             <div class="col-12">
-                                <img class="section-three-image mt-2" src="assets/images/job-office-team.jpg" alt="">
+                                <div class="image-one-container">
+                                    <img id="imageOneContainer" class="section-three-image mt-2" src="assets/images/job-office-team.jpg" alt="">
+                                </div>
+                                
                             </div>
                             <div class="col-12 mt-2">
                                 <h4 class="section-three-title text-center mt-2">APPRENTICE RECRUITMENT</h4>
@@ -261,7 +283,10 @@
                     <div id="imageTwo" class="col-12 col-md-6 col-xl-3 mt-2">
                         <div class="row ms-5">
                             <div class="col-12">
-                                <img class="section-three-image mt-2" src="assets/images/job-office-team.jpg" alt="">
+                                <div class="image-two-container">
+                                    <img id="imageTwoContainer" class="section-three-image mt-2" src="assets/images/job-office-team.jpg" alt="">
+                                </div>
+                                
                             </div>
                             <div class="col-12 mt-2">
                                 <h4 class="section-three-title text-center mt-2">APPRENTICE RECRUITMENT</h4>
@@ -278,10 +303,13 @@
                     <div id="imageThree" class="col-12 col-md-6 col-xl-3 mt-2">
                         <div class="row ms-5">
                             <div class="col-12">
-                                <img class="section-three-image mt-2" src="assets/images/job-office-team.jpg" alt="">
+                                <div class="image-three-container">
+                                    <img id="imageThreeContainer" class="section-three-image mt-2" src="assets/images/job-office-team.jpg" alt="">
+                                </div>
+                                
                             </div>
                             <div class="col-12 mt-2">
-                                <h4 class=" section-three-title text-center mt-2">APPRENTICE RECRUITMENT</h4>
+                                <h4 class="section-three-title text-center mt-2">APPRENTICE RECRUITMENT</h4>
                             </div>
                             <div class="col-12 section-three-text mt-2">
                                 <p>
@@ -295,10 +323,13 @@
                     <div id="imageFour" class="col-12 col-md-6 col-xl-3 mt-2">
                         <div class="row ms-5">
                             <div class="col-12">
-                                <img class="section-three-image mt-2" src="assets/images/job-office-team.jpg" alt="">
+                                <div class="image-four-container">
+                                    <img id="imageFourContainer" class="section-three-image mt-2" src="assets/images/job-office-team.jpg" alt="">
+                                </div>
+                                
                             </div>
                             <div class="col-12 mt-2">
-                                <h4 class=" section-three-title text-center mt-2">APPRENTICE RECRUITMENT</h4>
+                                <h4 class="section-three-title text-center mt-2">APPRENTICE RECRUITMENT</h4>
                             </div>
                             <div class="col-12 section-three-text mt-2">
                                 <p>
@@ -333,5 +364,4 @@
         integrity="sha512-zjlf0U0eJmSo1Le4/zcZI51ks5SjuQXkU0yOdsOBubjSmio9iCUp8XPLkEAADZNBdR9crRy3cniZ65LF2w8sRA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/chartOne.js"></script>
 </body>
