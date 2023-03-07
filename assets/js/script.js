@@ -1,26 +1,21 @@
 $(document).ready(function () {
-    let pc = $('#pc');
-    pc.animate({
-        left: '200px'
-    }, 1000);
-
+    // image curve one hide
     let curveone = $('#curveone');
     curveone.animate({
         left: '20px'
     }, 1500);
-
+    // image curve two hide
     let curvetwo = $('#curvetwo');
     curvetwo.animate({
         left: '20px'
     }, 1200);
 
-    $('#navLogoTwo').hide('slide', {
-        direction: 'left'
-    });
+    // header logo two hide
+    $('#navLogoTwo').hide('slide', {direction: 'left'});
 
     $(window).on('scroll', () => {
 
-        // scroll point script
+        // image curve animate left to right
         let test = $('#navLogoOne').height();
         if ($(this).scrollTop() >= test) {
             curveone.animate({
@@ -35,6 +30,7 @@ $(document).ready(function () {
     });
 
     $(window).scroll(function () {
+        // nav logo swap
         if ($(document).scrollTop() > 0) {
             $('#navLogoOne').hide('slide', {
                 direction: 'left'
@@ -47,6 +43,7 @@ $(document).ready(function () {
     });
 
     $(window).scroll(function () {
+        // nav logo swap
         if ($(document).scrollTop() > 200) {
             $('#navLogoTwo').show('slide', {
                 direction: 'left'
@@ -59,8 +56,9 @@ $(document).ready(function () {
     });
 
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 700) {
-            $('#imageOneContainer').show('slide', {
+        // bottom image show
+        if ($(document).scrollTop() > 500) {
+            $('#imageOne').show('slide', {
                 direction: 'left'
             }, 1000);
             $('#imageTwo').show('slide', {
@@ -73,7 +71,8 @@ $(document).ready(function () {
                 direction: 'left'
             }, 2500);
         } else {
-            $('#imageOneContainer').hide('slide', {
+            // bottom image hide
+            $('#imageOne').hide('slide', {
                 direction: 'left'
             });
             $('#imageTwo').hide('slide', {
@@ -88,6 +87,8 @@ $(document).ready(function () {
         }
     });
 
+    
+    // bottom images bounce
     $("#imageOneContainer")
         .mouseenter(function () {
             $("#imageOneContainer").animate({
@@ -101,6 +102,7 @@ $(document).ready(function () {
                 width: '200px'
             }, );
         });
+
 
     $("#imageTwoContainer")
         .mouseenter(function () {
@@ -144,5 +146,6 @@ $(document).ready(function () {
                 width: '200px'
             }, );
         });
+    // bottom images bounce end
 
 });

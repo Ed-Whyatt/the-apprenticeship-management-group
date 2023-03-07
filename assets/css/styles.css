@@ -1,11 +1,37 @@
 /* General padding and margins */
-html, body {
-    margin:0;
-    padding:0;
-    height:100%;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 /* General backgroud and text colours */
+
+.amg-text-orange {
+    color: #f29426;
+}
+
+.amg-text-brown {
+    color: #251f22;
+}
+
+.amg-text-white {
+    color: #f9f7ee;
+}
+
+.amg-text-dark-grey {
+    color: #6A656A;
+}
+
+.amg-background-orange {
+    background-color: #f29426;
+}
+
+.amg-background-light-gray {
+    background-color: rgba(149, 148, 148, 0.5);
+}
+
 .amg-background-white {
     background-color: #f9f7ee;
 }
@@ -13,7 +39,7 @@ html, body {
 /* Header and nav section */
 .header-container {
     height: 100px;
-    background-image: linear-gradient( #f2b926, #f29426);
+    background-image: linear-gradient(#f2b926, #f29426);
     position: fixed;
     width: 100%;
     z-index: 17;
@@ -22,7 +48,7 @@ html, body {
 .navbar-container {
     position: fixed;
     width: 100%;
-    z-index: 18;
+    z-index: 30;
     background-color: transparent !important;
 }
 
@@ -34,7 +60,7 @@ html, body {
 
 /* nav facebook logo */
 .facebook-logo {
-    font-size: 30px;  
+    font-size: 30px;
 }
 
 .facebook-logo span {
@@ -45,7 +71,8 @@ html, body {
 .header-logo-one {
     height: 130px;
     width: 100%;
-    z-index: 18;
+    position: relative;
+    z-index: 31;
     padding-top: 1%;
     padding-left: 5%;
 }
@@ -53,7 +80,8 @@ html, body {
 .header-logo-two {
     height: 80px;
     width: 60%;
-    z-index: 19;
+    position: relative;
+    z-index: 31;
     padding-top: 1%;
     padding-left: 5%;
 }
@@ -61,8 +89,9 @@ html, body {
 .header-wave-container {
     height: 150px;
     position: absolute;
-    background-color: #f29426;
-    z-index: 16;
+    /* background-color: #f29426; */
+    z-index: 29;
+    width: 100%;
 }
 
 /* .header-wave-one {
@@ -75,18 +104,20 @@ html, body {
 
 .header-wave-two {
     position: relative;
-    height: 3vh;
-    top: -42vh;
-    width: 900px;
+    height: 100px;
+    top: -200px;
+    max-width: 2400px;
     background-color: transparent;
+    z-index: 19;
 }
 
 .header-wave-three {
     position: relative;
-    height: 3vh;
-    top: -43vh;
-    width: 900px;
+    height: 100px;
+    top: -300px;
+    max-width: 2400px;
     background-color: transparent;
+    z-index: 19;
 }
 
 /* Image section */
@@ -158,7 +189,7 @@ html, body {
     justify-content: top;
     position: relative;
     display: flex;
-    height: 90vh;
+    min-height: 500px;
 }
 
 .section-three-first-container {
@@ -177,14 +208,18 @@ html, body {
 
 .section-three-second-container {
     background-color: #f9f7ee;
+    min-height: 380px;
     padding-bottom: 100px;
 }
 
 
-.image-one-container, .image-two-container, .image-three-container, .image-four-container {
+.image-one-container,
+.image-two-container,
+.image-three-container,
+.image-four-container {
     width: 220px;
     height: 160px;
-    margin-left: 25%;
+    margin-left: 15%;
 }
 
 
@@ -208,7 +243,7 @@ html, body {
 
 .footer {
     height: 100px;
-    background-image: linear-gradient( #f2b926, #f29426);
+    background-image: linear-gradient(#f2b926, #f29426);
     padding-bottom: 0;
     margin-bottom: 0;
 }
