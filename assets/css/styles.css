@@ -38,11 +38,11 @@ body {
 
 /* Header and nav section */
 .header-container {
-    height: 100px;
+    height: 80px;
     background-image: linear-gradient(#f2b926, #f29426);
     position: fixed;
     width: 100%;
-    z-index: 17;
+    z-index: 30;
     /* z-index: 16; */
 }
 
@@ -72,28 +72,28 @@ body {
 .header-logo-one {
     height: 130px;
     width: auto 0;
-    position: relative;
-    z-index: 31;
+    position: absolute;
+    z-index: 40;
     padding-left: 5%;
-    margin-top: 15%;
+    margin-top: 2%;
 }
 
 .header-logo-two {
     height: 100px;
     width: auto 0;
     position: relative;
-    z-index: 31;
+    z-index: 40;
     padding-top: 1%;
     padding-left: 5%;
 }
 
 .header-wave-container {
-    margin-top: 100px;
-    height: 100px;
+    margin-top: 80px;
+    height: 10vh;
+    width: 100%;
     position: relative;
-    background-color: #f29426;
-    z-index: 16;
-
+    background-image: linear-gradient(#f29426, #ff8c00);
+    z-index: 20;
 }
 
 /* .header-wave-one {
@@ -106,17 +106,18 @@ body {
 
 .header-wave-two {
     position: absolute;
-    height: 100px;
     width: 100%;
     z-index: 17;
-    margin-top: -260px;
+    height: 10vh;
+    margin-top: -35vh;
 }
 
 .header-wave-three {
     position: absolute;
     width: 100%;
+    height: 10vh;
     z-index: 17;
-    margin-top: -260px;
+    margin-top: -35vh;
 }
 
 /* Image section */
@@ -249,47 +250,108 @@ body {
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 1600px) {
+
+@media screen and (max-width: 2200px) {
     .header-wave-two {
-        margin-top: -230px;
+        margin-top: -33vh;
     }
     
     .header-wave-three {
-        margin-top: -230px;
+        margin-top: -33vh;
+    }
+}
+
+@media screen and (max-width: 2100px) {
+    .header-wave-two {
+        margin-top: -30vh;
+    }
+    
+    .header-wave-three {
+        margin-top: -30vh;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .header-wave-two {
+        margin-top: -27vh;
+    }
+    
+    .header-wave-three {
+        margin-top: -27vh;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .header-wave-two {
+        margin-top: -290px;
+    }
+    
+    .header-wave-three {
+        margin-top: -290px;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .header-wave-two {
+        margin-top: -270px;
+    }
+    
+    .header-wave-three {
+        margin-top: -270px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .header-wave-two {
+        margin-top: -250px;
+    }
+    
+    .header-wave-three {
+        margin-top: -250px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .header-wave-two {
+        margin-top: -250px;
+    }
+    
+    .header-wave-three {
+        margin-top: -250px;
     }
 }
 
 @media screen and (max-width: 1500px) {
     .header-wave-two {
-        margin-top: -210px;
+        margin-top: -230px;
     }
     
     .header-wave-three {
-        margin-top: -210px;
+        margin-top: -230px;
     }
 }
 
 @media screen and (max-width: 1400px) {
     .header-wave-two {
-        margin-top: -190px;
+        margin-top: -210px;
     }
     
     .header-wave-three {
-        margin-top: -190px;
+        margin-top: -210px;
     }
 }
 
 @media screen and (max-width: 1300px) {
     .header-wave-two {
-        margin-top: -170px;
+        margin-top: -180px;
     }
     
     .header-wave-three {
-        margin-top: -170px;
+        margin-top: -180px;
     }
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     .header-wave-two {
         margin-top: -150px;
     }
@@ -297,7 +359,7 @@ body {
     .header-wave-three {
         margin-top: -150px;
     }
-}
+} */
 
 @media screen and (max-width: 1100px) {
     .header-wave-two {
@@ -306,16 +368,6 @@ body {
     
     .header-wave-three {
         margin-top: -130px;
-    }
-}
-
-@media screen and (max-width: 1050px) {
-    .header-wave-two {
-        margin-top: -120px;
-    }
-    
-    .header-wave-three {
-        margin-top: -120px;
     }
 }
 
@@ -366,5 +418,15 @@ body {
     
     .header-wave-three {
         margin-top: -30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-wave-two {
+        margin-top: -10px;
+    }
+    
+    .header-wave-three {
+        margin-top: -10px;
     }
 }
