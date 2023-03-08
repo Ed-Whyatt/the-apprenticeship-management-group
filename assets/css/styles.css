@@ -43,6 +43,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 17;
+    /* z-index: 16; */
 }
 
 .navbar-container {
@@ -54,7 +55,7 @@ body {
 
 .nav-link {
     color: #251f22;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -70,16 +71,16 @@ body {
 /* nav logo */
 .header-logo-one {
     height: 130px;
-    width: 100%;
+    width: auto 0;
     position: relative;
     z-index: 31;
-    padding-top: 1%;
     padding-left: 5%;
+    margin-top: 15%;
 }
 
 .header-logo-two {
-    height: 80px;
-    width: 60%;
+    height: 100px;
+    width: auto 0;
     position: relative;
     z-index: 31;
     padding-top: 1%;
@@ -87,43 +88,41 @@ body {
 }
 
 .header-wave-container {
-    height: 150px;
-    position: absolute;
-    /* background-color: #f29426; */
-    z-index: 29;
-    width: 100%;
+    margin-top: 100px;
+    height: 100px;
+    position: relative;
+    background-color: #f29426;
+    z-index: 16;
+
 }
 
 /* .header-wave-one {
-    position: relative;
-    height: 3vh;
-    top: -37vh;
-    width: 2000px;
-    background-color: transparent;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    z-index: 17;
+    margin-top: -300px;
 } */
 
 .header-wave-two {
-    position: relative;
+    position: absolute;
     height: 100px;
-    top: -200px;
-    max-width: 2400px;
-    background-color: transparent;
-    z-index: 19;
+    width: 100%;
+    z-index: 17;
+    margin-top: -260px;
 }
 
 .header-wave-three {
-    position: relative;
-    height: 100px;
-    top: -300px;
-    max-width: 2400px;
-    background-color: transparent;
-    z-index: 19;
+    position: absolute;
+    width: 100%;
+    z-index: 17;
+    margin-top: -260px;
 }
 
 /* Image section */
 
 .image-section {
-    padding-top: 15vh;
+    /* margin-top: 200px; */
 }
 
 /* Image from https://pixabay.com/photos/job-office-team-business-internet-5382501/ */
@@ -219,7 +218,7 @@ body {
 .image-four-container {
     width: 220px;
     height: 160px;
-    margin-left: 15%;
+    /* margin-left: 15%; */
 }
 
 
@@ -228,6 +227,8 @@ body {
     height: 150px;
     border-radius: 25px;
     box-shadow: 2px 2px 4px #000000;
+    position: relative;
+    z-index: 15;
 }
 
 .section-three-title {
@@ -237,7 +238,7 @@ body {
 
 .section-three-text {
     width: 80%;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     color: #251f22;
 }
 
@@ -246,4 +247,124 @@ body {
     background-image: linear-gradient(#f2b926, #f29426);
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 1600px) {
+    .header-wave-two {
+        margin-top: -230px;
+    }
+    
+    .header-wave-three {
+        margin-top: -230px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .header-wave-two {
+        margin-top: -210px;
+    }
+    
+    .header-wave-three {
+        margin-top: -210px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .header-wave-two {
+        margin-top: -190px;
+    }
+    
+    .header-wave-three {
+        margin-top: -190px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .header-wave-two {
+        margin-top: -170px;
+    }
+    
+    .header-wave-three {
+        margin-top: -170px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header-wave-two {
+        margin-top: -150px;
+    }
+    
+    .header-wave-three {
+        margin-top: -150px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .header-wave-two {
+        margin-top: -130px;
+    }
+    
+    .header-wave-three {
+        margin-top: -130px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header-wave-two {
+        margin-top: -120px;
+    }
+    
+    .header-wave-three {
+        margin-top: -120px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header-wave-two {
+        margin-top: -110px;
+    }
+    
+    .header-wave-three {
+        margin-top: -110px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header-wave-two {
+        margin-top: -90px;
+    }
+    
+    .header-wave-three {
+        margin-top: -90px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header-wave-two {
+        margin-top: -70px;
+    }
+    
+    .header-wave-three {
+        margin-top: -70px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header-wave-two {
+        margin-top: -50px;
+    }
+    
+    .header-wave-three {
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-wave-two {
+        margin-top: -30px;
+    }
+    
+    .header-wave-three {
+        margin-top: -30px;
+    }
 }

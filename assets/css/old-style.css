@@ -267,12 +267,14 @@ h1 {
     height: 30px;
     width: 100%;
     position: absolute;
+    z-index: 40;
 }
 
 .section-line-two {
     height: 30px;
     width: 100%;
     position: absolute;
+    z-index: 40;
 }
 
 .section-curve {
