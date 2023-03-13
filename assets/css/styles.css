@@ -61,6 +61,7 @@ body {
     color: #251f22;
     font-size: 18px;
     font-weight: 400;
+    margin-top: 10px;
 }
 
 /* nav facebook logo */
@@ -79,7 +80,7 @@ body {
     position: absolute;
     z-index: 40;
     padding-left: 5%;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 .header-logo-two {
