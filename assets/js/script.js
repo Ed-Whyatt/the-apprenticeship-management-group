@@ -15,6 +15,8 @@ $(document).ready(function () {
     // Section one heading and text hide
     $('#sectionOneHeading').hide('slide', {direction: 'left'});
     $('#sectionOneText').hide('slide', {direction: 'right'});
+    // Chart text hide
+    $('#twoText').hide('slide', {direction: 'left'});
 
     $(window).on('scroll', () => {
 
@@ -58,6 +60,20 @@ $(document).ready(function () {
         }
     });
 
+    // Graph and text show and hide
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 1800) {
+            console.log("now")
+            $('#twoText').show('slide', {direction: 'left'}, 1000);
+            $("#barchart").animate({
+                height: '300px',
+                width: '300px'
+              }, "slow");
+        } else {
+            $('#twoText').hide('slide', {direction: 'left'});
+        }
+    });
+
     // Section one heading and text show and hide
     $(window).scroll(function () {
         if ($(document).scrollTop() > 400) {
@@ -66,6 +82,7 @@ $(document).ready(function () {
         } else {
             $('#sectionOneHeading').hide('slide', {direction: 'left'});
             $('#sectionOneText').hide('slide', {direction: 'right'});
+
         }
     });
 
