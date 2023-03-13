@@ -12,6 +12,9 @@ $(document).ready(function () {
 
     // header logo two hide
     $('#navLogoTwo').hide('slide', {direction: 'left'});
+    // Section one heading and text hide
+    $('#sectionOneHeading').hide('slide', {direction: 'left'});
+    $('#sectionOneText').hide('slide', {direction: 'right'});
 
     $(window).on('scroll', () => {
 
@@ -52,6 +55,17 @@ $(document).ready(function () {
             $('#navLogoTwo').hide('slide', {
                 direction: 'left'
             });
+        }
+    });
+
+    // Section one heading and text show and hide
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 400) {
+            $('#sectionOneHeading').show('slide', {direction: 'left'}, 1500);
+            $('#sectionOneText').show('slide', {direction: 'right'}, 1500);
+        } else {
+            $('#sectionOneHeading').hide('slide', {direction: 'left'});
+            $('#sectionOneText').hide('slide', {direction: 'right'});
         }
     });
 
