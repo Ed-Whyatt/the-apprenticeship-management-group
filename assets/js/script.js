@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    $('#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
+
     // image curve one hide
     let curveone = $('#curveone');
     curveone.animate({
@@ -63,7 +67,6 @@ $(document).ready(function () {
     // Graph and text show and hide
     $(window).scroll(function () {
         if ($(document).scrollTop() > 1800) {
-            console.log("now")
             $('#twoText').show('slide', {direction: 'left'}, 1000);
             $("#barchart").animate({
                 height: '300px',
